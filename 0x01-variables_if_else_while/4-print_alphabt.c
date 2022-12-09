@@ -1,25 +1,20 @@
 #include <stdio.h>
-
-/*
- *
- * main -Prints the alphabeth in lowercase, except q and e
- *
+/**
+ *  * main - main block
+ * Description: Use `putchar` to print all letters but the letter 'q' and 'e'.
  * Return: 0
- *
  */
-
 int main(void)
 {
+		char c = 'a';
 
-	char la;
+		while (c <= 'z')
+		{
+		if (c != 'q' && c != 'e')
+			putchar(c);
+			c++;
+		}
+			putchar('\n');
 
-	for (la = 'a'; la <= 'z'; la++)
-	{
-		if (la != 'e' && la != 'q')
-			putchar(la);
-	}
-
-	putchar('\n');
-
-	return (0);
+		return (0);
 }
