@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main -print a C program size of various data types it is compiled on
+ * main -print out size of data types in c
  *
  * Return: 0
  */
