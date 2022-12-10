@@ -1,33 +1,35 @@
 #include <stdio.h>
 /**
  *  * main - main block
- *   * Description: Print numbers from 0 to 99.
- *    * Numbers must be separated by commas followed by a space.
- *     * You can only use `putchar` to print to console.
- *      * You can only use `putchar` up to 5 times.
- *       * You are not allowed to use variables of type `char`.
- *        * Return: 0
- *         */
+ ** Description: Print numbers from 0 to 99.
+ ** Numbers must be separated by commas followed by space
+ *
+ * Return: 0
+ */
 int main(void)
 {
+	int i, j;
 
-	int i, j, k;
+	for (i = 0; i < 100; i++)
+	{
+		for (j = 0; j < 100; j++)
+		{
+			if (i < j)
+			{
+				putchar((i / 10) + 48);
+				putchar((i % 10) + 48);
+				putchar(' ');
+				putchar((j / 10) + 48);
+				putchar((j % 10) + 48);
+				if (i != 98 || j != 99)
+				{
+					putchar(',');
+					putchar(' ');
+				}
+			}
+		}
 
-			for (i = 0; i < 100; i++)
-					{
-								j = i / 10;
-										k = i % 10;
-
-												putchar(j + '0');
-														putchar(k + '0');
-
-																if (i < 99)
-																			{
-																							putchar(44);
-																										putchar(32);
-																												}
-																	}
-				putchar('\n');
-
-					return (0);
+	}
+	putchar('\n');
+	return (0);
 }
