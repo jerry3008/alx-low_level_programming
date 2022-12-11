@@ -1,32 +1,31 @@
 #include <stdio.h>
 
 /**
+ * main - Entry point
  *
- * main - main block
- *
- * You are not allowed to use any variable of type `char`.
- * Return: 0
+ * Return: Always 0 (Success)
  */
 
 int main(void)
 {
-	int i, j, k;
-	for (i = 0; i < 100; i++)
+	int a, b;
+
+	for (a = '0'; a < '9'; a++)
 	{
-			j = i % 10;
-			k = i / 10;
-
-			if (k < j)
+		for (b = a + 1; b <= '9'; b++)
+		{
+			if (a != b)
 			{
-				putchar(k + '0');
-				putchar(j + '0');
+				putchar(a);
+				putchar(b);
 
-				if (i < 89)
-				{
-					putchar(44);
-					putchar(32);
-				}
+				if (a == '8' && b == '9')
+					continue;
+
+				putchar(',');
+				putchar(' ');
 			}
+		}
 	}
 	putchar('\n');
 
