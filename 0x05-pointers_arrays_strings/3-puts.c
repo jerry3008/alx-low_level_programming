@@ -1,15 +1,15 @@
 #include "main.h"
 
 /**
- * main - check the code
- *
- * Return: Always 0.
+ * _puts - a function that prints a string to stdout
+ * followed by a new line
+ * @str: The string to be printed.
  */
-int _strlen(char *s)
-{
-    int a = 0; /*count from 0*/
-    for (; *s++;)
-	    a++;
-    return (a);
 
+void _puts(char *str)
+{
+	while (*str)
+		_putchar(*str++);
+
+	_putchar('\n');
 }
