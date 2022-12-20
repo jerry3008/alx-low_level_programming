@@ -5,11 +5,11 @@
  *
  * Return: Always 0.
  */
-int main(void)
+int _strlen(char *s)
 {
-    char *str;
+    int a = 0; /*count from 0*/
+    for (; *s++;)
+	    a++;
+    return (a);
 
-    str = "I do not fear computers. I fear the lack of them - Isaac Asimov";
-    _puts(str);
-    return (0);
 }
