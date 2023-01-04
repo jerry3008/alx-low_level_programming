@@ -4,14 +4,14 @@
  * @s:string
  * Return:int
  */
-int _strlen_recursion(char *g)
+int _strlen_recursion(char *s)
 {
 	int i = 0;
 
-	if (*g)
+	if (*s)
 	{
 		i++;
-		i += _strlen_recursion(g + 1);
+		i += _strlen_recursion(s + 1);
 
 	}
 	return (i);
