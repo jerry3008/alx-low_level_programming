@@ -3,7 +3,7 @@
 
 /**
  * File: main.h
- * Auth: Raymond Omoraka
+ * Auth: GBEMUDU JERRY
  * Description: Header file containing prototypes for all functions 
  * in this directory.
  */

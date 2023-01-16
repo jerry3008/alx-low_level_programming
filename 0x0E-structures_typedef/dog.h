@@ -3,7 +3,7 @@
 
 /*
  * File: dog.h
- * Auth: Raymond Omoraka
+ * Auth: Gbemudu Jerry
  * Desc: Header file that defines a new type struct dog.
  */
 
