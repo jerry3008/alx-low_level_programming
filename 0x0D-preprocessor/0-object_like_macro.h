@@ -3,7 +3,7 @@
 
 /*
  * File: 0-object_like_macro.h
- * Author: Raymond Omoraka
+ * Author: Gbemudu Jerry
  * Desc: Header file that defines a macro named
  *       SIZE as an abbreviation for the token 1024.
  */
