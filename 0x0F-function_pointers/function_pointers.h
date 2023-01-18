@@ -2,10 +2,8 @@
 #define FUNCTION_POINTERS_H
 
 /*
- * File: function_pointers.h
- * Author: Gbemudu Jerry 
  * Desc: Header file containing prototypes for all functions
- *       used in the 0x0F-function_pointers directory.
+ *       used in the 0x0E-function_pointers directory.
  */
 
 #include <stdlib.h>
