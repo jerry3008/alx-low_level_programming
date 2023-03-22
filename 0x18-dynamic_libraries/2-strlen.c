@@ -1,26 +1,17 @@
 #include "main.h"
 
 /**
- * _strchr - checks for a particular character in a string
- * @s: string to be checked
- * @c: character to look for
- *
- * Return: pointer to charcter if found
+ * _strlen - a function that returns the length of a string.
+ * @str: The string to get the length of.
+ * Return: The length of the string
  */
-char *_strchr(char *s, char c)
-{
-	char *d;
 
-	while (*s != '\0')
-	{
-		if (*s == c)
-		{
-			break;
-		}
-		s++;
-	}
-	d = s;
-	if ((*s == '\0') && (c != '\0'))
-		d = "nil";
-	return (d);
+size_t _strlen(const char *str)
+{
+	size_t length = 0;
+
+	while (*str++)
+		length++;
+
+	return (length);
 }
